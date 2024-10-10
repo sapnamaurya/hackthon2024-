@@ -43,22 +43,25 @@ nav ul li a:hover {
 }
 
 /* Mobile-friendly navigation */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   header {
-    padding: 15px 30px;
+    padding: 0px 13px;
   }
 
   nav ul {
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
     align-items: center;
   }
+  .logo {
+    margin-right: 0;
+  }
 
   nav ul li a {
-    font-size: 1.2rem;
+    font-size: 10px;
   }
 
   .logo img {
-    max-width: 120px;
+    max-width: 49px;
   }
 }

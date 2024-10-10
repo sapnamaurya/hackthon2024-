@@ -27,3 +27,34 @@
 .subs {
   padding: 21px;
 }
+@media (max-width: 768px) {
+  .subscribe h1 {
+    font-size: 1.5rem; /* Smaller heading on mobile */
+  }
+
+  .email-input {
+    width: 90%; /* Wider input on mobile */
+  }
+
+  .subscribe-button {
+    font-size: 0.9rem; /* Smaller button text */
+  }
+}
+
+@media (max-width: 480px) {
+  .subscribe-section {
+    padding: 42px 20px;
+    text-align: center;
+    background-color: #fff; /* Even smaller heading on extra small screens */
+  }
+
+  .email-input {
+    width: 95%; /* Even wider input on very small screens */
+  }
+  .subscribe-section form input {
+    margin-bottom: 20px;
+  }
+  .subscribe-button {
+    padding: 8px 16px; /* Smaller button size */
+  }
+}

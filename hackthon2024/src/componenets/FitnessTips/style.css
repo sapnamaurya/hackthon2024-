@@ -36,3 +36,50 @@ h2 {
 .tip p {
   color: #666;
 }
+@media (max-width: 768px) {
+  .fitness-tips h2 {
+    font-size: 1.5rem; /* Smaller heading on mobile */
+  }
+
+  .tips-container {
+    max-height: 200px; /* Reduce height on smaller screens */
+    padding: 15px; /* Less padding for mobile */
+  }
+
+  .tip {
+    font-size: 1rem; /* Smaller font size for tips */
+  }
+}
+
+@media (max-width: 480px) {
+  .fitness-tips {
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    height: 71vh;
+    background: linear-gradient(45deg, #292121, transparent);
+  }
+  .fitness-tips h2 {
+    color: black;
+    font-weight: bold;
+    padding: 13px;
+    height: 7vh;
+    font-size: 1.2rem; /* Even smaller heading on extra small screens */
+  }
+
+  .tips-container {
+    max-height: 107vh;
+    height: 61vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px; /* Further reduce padding */
+  }
+
+  .tip {
+    width: 100%;
+    padding: 12px;
+    font-size: 12px;
+    margin: 0px 10px 12px 10px; /* Smaller font size for tips */
+  }
+}

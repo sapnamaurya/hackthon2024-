@@ -87,7 +87,7 @@ const GymHome = () => {
       {/* Header Section */}
       <section class="contact-form">
         <div class="form-container">
-          <h2>Your Details</h2>
+          <h2 style={{ color: "black", margin: "0" }}>Your Details</h2>
           <form action="#" method="POST">
             <div class="post">
               <label for="name">Name: </label>

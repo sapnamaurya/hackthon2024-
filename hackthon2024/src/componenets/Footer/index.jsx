@@ -13,8 +13,8 @@ const Footer = () => {
   return (
     <div>
       <footer>
-        <div className="container footer-wrapper">
-          <div className="footer-faded-text">Gym Home</div>
+        <div className="footer-faded-text">Gym Home</div>
+        <div className="cont">
           <div className="link-wrapper">
             <div>
               <a onClick={handleLogin}>Log in</a>

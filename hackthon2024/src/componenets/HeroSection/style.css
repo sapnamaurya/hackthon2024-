@@ -16,3 +16,31 @@
 .hero-section p {
   font-size: 1.2rem;
 }
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.5rem; /* Smaller font size for mobile */
+  }
+
+  .hero-section p {
+    font-size: 1.2rem; /* Smaller font size for mobile */
+  }
+
+  .cta-button {
+    font-size: 1rem; /* Smaller button font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section h1 {
+    font-size: 2rem; /* Even smaller font size for extra small screens */
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+    padding: 0 4px; /* Even smaller font size for extra small screens */
+  }
+
+  .cta-button {
+    padding: 10px 20px; /* Smaller button size */
+  }
+}

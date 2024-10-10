@@ -8,6 +8,7 @@ const MotivationHeader = () => {
   const handleHome = () => {
     navigate("/home");
   };
+
   return (
     <header>
       <div className="logo">

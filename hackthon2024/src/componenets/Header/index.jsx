@@ -5,11 +5,7 @@ import logo from "../../assets/images/logo.jpeg";
 import { Link } from "react-scroll";
 const Header = () => {
   const navigate = useNavigate();
-  const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
   const handleLogin = () => {
     navigate("/login");
   };
@@ -18,7 +14,7 @@ const Header = () => {
   };
   return (
     <header className="header">
-      <nav className={`nav ${isOpen ? "open" : ""}`}>
+      <nav className="nav">
         <div class="logo">
           <img src={logo} alt="GymHome" id="logo" />
         </div>
@@ -52,9 +48,6 @@ const Header = () => {
           </button>
         </div>
       </nav>
-      <div className="hamburger" onClick={toggleMenu}>
-        ☰
-      </div>
     </header>
   );
 };
