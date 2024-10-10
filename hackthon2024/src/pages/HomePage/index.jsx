@@ -44,7 +44,13 @@ const GymHome = () => {
         <div className="body">
           Welcome to Gym Home, your ultimate online fitness companion! Our
           website is designed to help you achieve your fitness goals from the
-          comfort of your own home...
+          comfort of your own home. With our comprehensive tracking system,
+          you'll be able to monitor your progress and stay motivated on your
+          journey to a healthier, stronger you. Plus, our extensive library of
+          exercise videos will guide you through a variety of workouts, ensuring
+          you never get bored or plateau. Whether you're a fitness enthusiast or
+          just starting out, Gym Home is here to support and empower you every
+          step of the way.
         </div>
         <div className="role"></div> {/* Placeholder for Typed.js */}
       </div>

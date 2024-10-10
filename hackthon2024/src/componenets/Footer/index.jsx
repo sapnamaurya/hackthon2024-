@@ -1,7 +1,12 @@
 import React from "react";
 import "./style.css";
 import { FaTwitterSquare } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 const Footer = () => {
+  const navigate = useNavigate();
+  const handleContact = () => {
+    navigate("/contact");
+  };
   return (
     <div>
       <footer>
@@ -15,7 +20,7 @@ const Footer = () => {
               <a href="#membership">Membership</a>
             </div>
             <div>
-              <a href="#contactme">Contact Me</a>
+              <a onClick={handleContact}>Contact Me</a>
             </div>
           </div>
           <div className="icon-wrapper">

@@ -4,6 +4,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import GymHome from "./pages/HomePage";
 
+import Contact from "./componenets/ContactMe";
+
 function App() {
   return (
     <div>
@@ -13,6 +15,7 @@ function App() {
 
           <Route path="/home" element={<GymHome />} />
           <Route path="login" element={<Login />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
     </div>
