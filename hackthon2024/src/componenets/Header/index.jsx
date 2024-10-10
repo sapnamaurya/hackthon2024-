@@ -10,8 +10,8 @@ const Header = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-  const handleSignIn = () => {
-    navigate("/sign-in");
+  const handleLogin = () => {
+    navigate("/login");
   };
   const handleHome = () => {
     navigate("/home");
@@ -36,8 +36,8 @@ const Header = () => {
           <li>Membership</li>
         </ul>
         <div className="login">
-          <button onClick={handleSignIn} className="btn-pink btn-project">
-            Sign In
+          <button onClick={handleLogin} className="btn-pink btn-project">
+            Login
           </button>
         </div>
       </nav>

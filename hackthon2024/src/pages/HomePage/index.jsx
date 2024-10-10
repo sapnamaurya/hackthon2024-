@@ -1,15 +1,9 @@
 import React, { useEffect } from "react";
 import Typed from "typed.js"; // Import Typed.js
 import "./style.css";
-//import reportImg from "../assets/report.jpg";
-import { useNavigate } from "react-router-dom";
 import Footer from "../../componenets/Footer";
 import Header from "../../componenets/Header";
 import Service from "../../componenets/Service";
-//import dietImg from "../assets/diet.jpg";
-//import exerciseImg from "../assets/exercise.jpg";
-//import motivationImg from "../assets/motivation.jpg";
-//import membershipImg from "../assets/membership.jpg";
 
 const GymHome = () => {
   //   const page1 = {

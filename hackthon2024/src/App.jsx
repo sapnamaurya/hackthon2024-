@@ -1,5 +1,5 @@
 import React from "react";
-import SignIn from "./componenets/SignIn";
+import Login from "./componenets/Login";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import GymHome from "./pages/HomePage";
@@ -12,7 +12,7 @@ function App() {
           <Route path="/" element={<GymHome />} />
 
           <Route path="/home" element={<GymHome />} />
-          <Route path="sign-in" element={<SignIn />} />
+          <Route path="login" element={<Login />} />
         </Routes>
       </BrowserRouter>
     </div>

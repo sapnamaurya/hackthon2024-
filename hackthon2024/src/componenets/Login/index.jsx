@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Header from "../Header";
 import Footer from "../Footer";
 
-const SignIn = () => {
+const Login = () => {
   const navigate = useNavigate();
   // State to hold form data
   const [formData, setFormData] = useState({
@@ -35,13 +35,13 @@ const SignIn = () => {
       return;
     }
 
-    // Perform SignIn logic (API call or similar)
-    console.log("Signing up...", formData);
+    // Perform Login logic (API call or similar)
+    console.log("Loging up...", formData);
 
     // Reset the form
     setFormData({ username: "", email: "", password: "" });
   };
-  const handleSignIn = () => {
+  const handleLogin = () => {
     navigate("/home");
   };
   return (
@@ -49,7 +49,7 @@ const SignIn = () => {
       <Header />
       <div style={{ height: "52vh", padding: " 1% " }}>
         <div style={styles.container}>
-          <h2>SignIn</h2>
+          <h2>Login</h2>
           {error && <p style={styles.error}>{error}</p>}
           <form onSubmit={handleSubmit} style={styles.form}>
             <div style={styles.formGroup}>
@@ -86,12 +86,8 @@ const SignIn = () => {
               />
             </div>
             <div style={{ display: "flex", justifyContent: "space-between" }}>
-              <button
-                onClick={handleSignIn}
-                type="submit"
-                style={styles.button}
-              >
-                Sign In
+              <button onClick={handleLogin} type="submit" style={styles.button}>
+                Submit
               </button>
             </div>
           </form>
@@ -136,4 +132,4 @@ const styles = {
   },
 };
 
-export default SignIn;
+export default Login;

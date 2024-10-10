@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import { FaTwitterSquare } from "react-icons/fa";
 const Footer = () => {
   return (
     <div>
@@ -18,7 +19,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="icon-wrapper">
-            <i className="fa-brands fa-twitter icon"></i>
+            <FaTwitterSquare className="fa-brands fa-instagram icon" />
             <i className="fa-brands fa-instagram icon"></i>
             <i className="fa-regular fa-envelope icon"></i>
           </div>
