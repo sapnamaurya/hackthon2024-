@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import Typed from "typed.js";
 import "./style.css";
-import quote from "../../assets/images/quo.jpg";
 
 const MotivationalQuotes = () => {
   useEffect(() => {

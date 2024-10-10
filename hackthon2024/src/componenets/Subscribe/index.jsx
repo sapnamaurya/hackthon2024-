@@ -12,7 +12,7 @@ const Subscribe = () => {
   return (
     <section id="subscribe" className="subscribe-section">
       <h1 className="subs">Subscribe for Daily Motivation</h1>
-      <form onSubmit={handleSubmit}>
+      <form className="forms" onSubmit={handleSubmit}>
         <input
           type="email"
           placeholder="Enter your email"

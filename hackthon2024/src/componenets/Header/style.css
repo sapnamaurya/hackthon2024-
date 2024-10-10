@@ -8,7 +8,7 @@ body {
 }
 #logo {
   width: 72px;
-  height: 66px;
+  height: 58px !important;
 
   border-radius: 10px;
 }
@@ -45,6 +45,26 @@ body {
 .nav li {
   margin: 0 15px;
 }
+.main-container {
+  background: black;
+  padding: 9px 18px 9px 9px;
+  display: flex;
+}
+.main-container .image {
+  margin-left: 1%;
+}
+.navbr {
+  display: flex;
+}
+.navbr ul {
+  flex-direction: row;
+  gap: 35px;
+  margin-right: 106px;
+  align-items: center;
+  /* margin-top: 0%; */
+  flex-wrap: wrap;
+  width: 100%;
+}
 
 .nav a {
   text-decoration: none;
@@ -61,49 +81,64 @@ body {
   font-size: 24px;
   cursor: pointer;
 }
-.login .btn-pink {
-  border-radius: 9px;
-  margin-top: 9%;
-  width: 134px;
+.btn-pink {
+  height: 6vh;
+  border-radius: 5px;
+  /* margin-top: 4%; */
+  width: 97px;
   background-color: #e84949;
   font-weight: bold;
   color: black;
-
   text-align: center;
-
   border: solid 3px transparent;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
   box-shadow: 5px 5px 7px 0px #0000003f;
   position: relative;
   z-index: 1;
 }
 /* Responsive Styles */
-@media (max-width: 768px) {
-  .nav {
-    display: none; /* Hide the nav by default on mobile */
-    position: absolute;
-    top: 60px; /* Adjust based on header height */
-    right: 0;
-    background-color: #333;
-    width: 100%;
-    text-align: center;
-    z-index: 1;
-  }
-
-  .nav.open {
-    display: block; /* Show the nav when open */
-  }
-
-  .hamburger {
-    display: block; /* Show hamburger icon on mobile */
-  }
-
-  .nav ul {
-    flex-direction: column; /* Stack nav items vertically */
-  }
-
-  .nav li {
-    margin: 10px 0; /* Space between vertical items */
+@media (max-width: 480px) {
+  @media (max-width: 480px) {
+    .main-container {
+      background: black;
+      padding: 4px;
+      margin-right: 0 !important;
+      display: flex;
+    }
+    .main-container .image {
+      margin-right: 11px;
+    }
+    .main-container .image #logo {
+      width: 67px;
+      height: 48px !important;
+    }
+    .main-container .navbr ul {
+      flex-direction: row;
+      gap: 5px;
+      margin-right: 0;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .main-container .navbr ul li {
+      margin-right: 6px;
+    }
+    .btn-pink {
+      margin-left: -41px;
+      height: 6vh;
+      border-radius: 5px;
+      margin-top: 9%;
+      width: 97px;
+      background-color: #e84949;
+      font-weight: bold;
+      color: black;
+      text-align: center;
+      border: solid 3px transparent;
+      cursor: pointer;
+      font-size: 12px;
+      box-shadow: 5px 5px 7px 0px #0000003f;
+      position: relative;
+      z-index: 1;
+    }
   }
 }

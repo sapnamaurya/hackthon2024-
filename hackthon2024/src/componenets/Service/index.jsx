@@ -1,4 +1,5 @@
 import React from "react";
+import "./style.css";
 import dietImg from "../../assets/images/diet.jpg";
 import exerciseImg from "../../assets/images/exercise.jpg";
 import motivationImg from "../../assets/images/motivation.jpg";
@@ -10,6 +11,19 @@ const Service = () => {
   const handleMotivation = () => {
     navigate("/motivation");
   };
+  const handleReport = () => {
+    navigate("/report");
+  };
+  const handleDiet = () => {
+    navigate("/diet");
+  };
+  const handleExercise = () => {
+    navigate("/exercise");
+  };
+  const handleMembership = () => {
+    navigate("/membership");
+  };
+
   return (
     <div>
       <div className="service-section">
@@ -25,7 +39,9 @@ const Service = () => {
               <h2 className="page-heading">Report Analysis</h2>
               <p className="page-sub-heading">It is report analysis page.</p>
               <div className="btn-group">
-                <button className="btn-pink btn-project">Goto</button>
+                <button className="btn-pink btn-project" onClick={handleReport}>
+                  Goto
+                </button>
               </div>
             </div>
           </div>
@@ -40,7 +56,9 @@ const Service = () => {
               <h2 className="page-heading">Diet Plans</h2>
               <p className="page-sub-heading">It is diet plan page.</p>
               <div className="btn-group">
-                <button className="btn-pink btn-project">Goto</button>
+                <button className="btn-pink btn-project" onClick={handleDiet}>
+                  Goto
+                </button>
               </div>
             </div>
           </div>
@@ -55,7 +73,12 @@ const Service = () => {
               <h2 className="page-heading">Exercises</h2>
               <p className="page-sub-heading">It is exercise videos page.</p>
               <div className="btn-group">
-                <button className="btn-pink btn-project">Goto</button>
+                <button
+                  className="btn-pink btn-project"
+                  onClick={handleExercise}
+                >
+                  Goto
+                </button>
               </div>
             </div>
           </div>
@@ -92,7 +115,12 @@ const Service = () => {
               <h2 className="page-heading">Membership</h2>
               <p className="page-sub-heading">It is membership page.</p>
               <div className="btn-group">
-                <button className="btn-pink btn-project">Goto</button>
+                <button
+                  className="btn-pink btn-project"
+                  onClick={handleMembership}
+                >
+                  Goto
+                </button>
               </div>
             </div>
           </div>
