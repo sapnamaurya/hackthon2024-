@@ -3,7 +3,9 @@ import Typed from "typed.js"; // Import Typed.js
 import "./style.css";
 import Footer from "../../componenets/Footer";
 import logo from "../../assets/images/logo.jpeg";
+import { useNavigate } from "react-router-dom";
 const GymHome = () => {
+  const navigate = useNavigate();
   //   const page1 = {
   //     backgroundImage: `url(${reportImg})`,
   //   };
@@ -31,16 +33,55 @@ const GymHome = () => {
       typed.destroy();
     };
   }, []); // Empty dependency array to run once when component mounts
-
+  const handleHome = () => {
+    navigate("/home");
+  };
+  const handleReport = () => {
+    navigate("/home");
+  };
+  const handleExercise = () => {
+    navigate("/home");
+  };
+  const handleDiet = () => {
+    navigate("/home");
+  };
+  const handleMembership = () => {
+    navigate("/home");
+  };
+  const handleMotivation = () => {
+    navigate("/motivation");
+  };
   return (
     <div class="form">
       {/* <!-- header section --> */}
       <div class="header">
-        <div class="logo">
+        <div class="logos">
           <img src={logo} alt="GymHome" id="logo" />
         </div>
         <div class="home">
-          <h3 id="home">Contact Us</h3>
+          <nav className="nav">
+            <ul>
+              <li>
+                <a onClick={handleHome}>Home</a>
+              </li>
+              <li>
+                <a onClick={handleReport}>Report Analysis</a>
+              </li>
+              <li>
+                <a onClick={handleDiet}>Diet Plan</a>
+              </li>
+              <li>
+                <a onClick={handleExercise}>Exercise</a>
+              </li>
+              <li>
+                <a onClick={handleMotivation}>Motivational Site</a>
+              </li>
+              <li>
+                <a onClick={handleMembership}>Membership</a>
+              </li>
+            </ul>
+            <h3 id="homes">Contact Us</h3>
+          </nav>
         </div>
       </div>
       {/* Header Section */}

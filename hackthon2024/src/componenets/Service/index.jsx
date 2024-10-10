@@ -3,17 +3,23 @@ import dietImg from "../../assets/images/diet.jpg";
 import exerciseImg from "../../assets/images/exercise.jpg";
 import motivationImg from "../../assets/images/motivation.jpg";
 import membershipImg from "../../assets/images/membership.jpg";
+import reportImg from "../../assets/images/report.jpg";
+import { useNavigate } from "react-router-dom";
 const Service = () => {
-  const bgImages = {
-    backgroundImage: `url(${dietImg})`,
-    backgroungPosition: "center",
+  const navigate = useNavigate();
+  const handleMotivation = () => {
+    navigate("/motivation");
   };
   return (
     <div>
       <div className="service-section">
         <h2 className="page-header">Services</h2>
         <div className="service-container">
-          <div className="page-card">
+          <div
+            className="page-card"
+            id="report"
+            style={{ backgroundImage: `url(${reportImg})` }}
+          >
             <div className="page-number page-number-left">01</div>
             <div className="page-content page-content-left">
               <h2 className="page-heading">Report Analysis</h2>
@@ -26,6 +32,7 @@ const Service = () => {
 
           <div
             className="page-card"
+            id="diet"
             style={{ backgroundImage: `url(${dietImg})` }}
           >
             <div className="page-number page-number-left">02</div>
@@ -40,6 +47,7 @@ const Service = () => {
 
           <div
             className="page-card"
+            id="exercise"
             style={{ backgroundImage: `url(${exerciseImg})` }}
           >
             <div className="page-number page-number-left">03</div>
@@ -54,6 +62,7 @@ const Service = () => {
 
           <div
             className="page-card"
+            id="motivational"
             style={{ backgroundImage: `url(${motivationImg})` }}
           >
             <div className="page-number page-number-left">04</div>
@@ -61,13 +70,19 @@ const Service = () => {
               <h2 className="page-heading">Motivational site</h2>
               <p className="page-sub-heading">It is motivational page.</p>
               <div className="btn-group">
-                <button className="btn-pink btn-project">Goto</button>
+                <button
+                  className="btn-pink btn-project"
+                  onClick={handleMotivation}
+                >
+                  Goto
+                </button>
               </div>
             </div>
           </div>
 
           <div
             className="page-card"
+            id="membership"
             style={{
               backgroundImage: `url(${membershipImg})`,
             }}

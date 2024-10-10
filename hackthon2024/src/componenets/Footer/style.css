@@ -1,6 +1,7 @@
 * footer section */ footer {
   position: relative;
   margin-top: -1px;
+  cursor: pointer;
   padding: 5rem;
   background-color: #343d68;
 }
@@ -8,12 +9,14 @@
   display: flex;
   gap: 1rem;
   padding: 1.2rem;
+  cursor: pointer;
   justify-content: space-between;
   align-items: center;
 }
 .footer-faded-text {
   position: absolute;
   left: 0;
+  cursor: pointer;
   bottom: 0;
   color: #535c87;
   user-select: none;
@@ -22,6 +25,7 @@
 }
 .link-wrapper {
   display: flex;
+  cursor: pointer;
   gap: 1.2rem;
 }
 .link-wrapper div a {

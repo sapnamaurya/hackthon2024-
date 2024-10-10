@@ -7,6 +7,9 @@ const Footer = () => {
   const handleContact = () => {
     navigate("/contact");
   };
+  const handleLogin = () => {
+    navigate("/login");
+  };
   return (
     <div>
       <footer>
@@ -14,7 +17,7 @@ const Footer = () => {
           <div className="footer-faded-text">Gym Home</div>
           <div className="link-wrapper">
             <div>
-              <a href="#login">Log in</a>
+              <a onClick={handleLogin}>Log in</a>
             </div>
             <div>
               <a href="#membership">Membership</a>

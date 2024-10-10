@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Header from "../Header";
+import logo from "../../assets/images/logo.jpeg";
+
 import Footer from "../Footer";
 
 const Login = () => {
@@ -44,12 +45,58 @@ const Login = () => {
   const handleLogin = () => {
     navigate("/home");
   };
+  const handleHome = () => {
+    navigate("/home");
+  };
+  const handleReport = () => {
+    navigate("/home");
+  };
+  const handleExercise = () => {
+    navigate("/home");
+  };
+  const handleDiet = () => {
+    navigate("/home");
+  };
+  const handleMembership = () => {
+    navigate("/home");
+  };
+  const handleMotivation = () => {
+    navigate("/motivation");
+  };
   return (
     <>
-      <Header />
-      <div style={{ height: "52vh", padding: " 1% " }}>
+      <div class="header">
+        <div class="logos">
+          <img src={logo} alt="GymHome" id="logo" />
+        </div>
+        <div class="home">
+          <nav className="nav">
+            <ul>
+              <li>
+                <a onClick={handleHome}>Home</a>
+              </li>
+              <li>
+                <a onClick={handleReport}>Report Analysis</a>
+              </li>
+              <li>
+                <a onClick={handleDiet}>Diet Plan</a>
+              </li>
+              <li>
+                <a onClick={handleExercise}>Exercise</a>
+              </li>
+              <li>
+                <a onClick={handleMotivation}>Motivational Site</a>
+              </li>
+              <li>
+                <a onClick={handleMembership}>Membership</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div style={{ height: "52vh", padding: " 1% ", background: "white" }}>
         <div style={styles.container}>
-          <h2>Login</h2>
+          <h1>Login</h1>
           {error && <p style={styles.error}>{error}</p>}
           <form onSubmit={handleSubmit} style={styles.form}>
             <div style={styles.formGroup}>

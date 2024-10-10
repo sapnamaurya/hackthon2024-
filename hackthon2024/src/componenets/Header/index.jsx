@@ -23,17 +23,28 @@ const Header = () => {
           <img src={logo} alt="GymHome" id="logo" />
         </div>
         <ul>
-          <li onClick={handleHome}>Home</li>
+          <li onClick={handleHome}>
+            <a>Home</a>
+          </li>
+          <li>
+            <a href="#report">Report Analysis </a>
+          </li>
           <li>
             {" "}
-            <Link to="report" smooth={true} duration={500}>
-              Report Analysis{" "}
-            </Link>
+            <a href="#diet">Diet Plan</a>
           </li>
-          <li>Diet Plan</li>
-          <li>Exercises</li>
-          <li>Motivational Site</li>
-          <li>Membership</li>
+          <li>
+            {" "}
+            <a href="#exercise">Exercises</a>
+          </li>
+          <li>
+            {" "}
+            <a href="#motivational">Motivational Site</a>
+          </li>
+          <li>
+            {" "}
+            <a href="#membership">Membership</a>
+          </li>
         </ul>
         <div className="login">
           <button onClick={handleLogin} className="btn-pink btn-project">
