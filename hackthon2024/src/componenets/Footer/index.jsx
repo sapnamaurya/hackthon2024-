@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 import { FaTwitterSquare } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 const Footer = () => {
   const navigate = useNavigate();
   const handleContact = () => {
@@ -9,6 +9,9 @@ const Footer = () => {
   };
   const handleLogin = () => {
     navigate("/login");
+  };
+  const handleMembership = () => {
+    navigate("/membership");
   };
   return (
     <div>
@@ -20,16 +23,22 @@ const Footer = () => {
               <a onClick={handleLogin}>Log in</a>
             </div>
             <div>
-              <a href="#membership">Membership</a>
+              <a onClick={handleMembership}>Membership</a>
             </div>
             <div>
               <a onClick={handleContact}>Contact Me</a>
             </div>
           </div>
           <div className="icon-wrapper">
-            <FaTwitterSquare className="fa-brands fa-instagram icon" />
-            <i className="fa-brands fa-instagram icon"></i>
-            <i className="fa-regular fa-envelope icon"></i>
+            <Link to="https://www.instagram.com/">
+              <i className="fa-brands fa-instagram icon"></i>
+            </Link>
+            <Link>
+              <FaTwitterSquare className="fa-brands fa-instagram icon" />
+            </Link>
+            <Link to="https://www.google.com/intl/en-US/gmail/about/">
+              <i className="fa-regular fa-envelope icon"></i>
+            </Link>
           </div>
         </div>
       </footer>

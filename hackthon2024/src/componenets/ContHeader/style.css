@@ -13,7 +13,7 @@
 }
 .main-cont .navbar ul {
   flex-direction: row;
-  gap: 35px;
+  gap: 21px;
   align-items: center;
   margin-top: 2%;
   cursor: pointer;

@@ -4,6 +4,7 @@ import "./style.css";
 import Footer from "../../componenets/Footer";
 import Header from "../../componenets/Header";
 import Service from "../../componenets/Service";
+import ChatBoxSymbol from "../../componenets/ChatBoxSymbol";
 
 const GymHome = () => {
   //   const page1 = {
@@ -54,7 +55,7 @@ const GymHome = () => {
         </div>
         <div className="role"></div> {/* Placeholder for Typed.js */}
       </div>
-
+      <ChatBoxSymbol />
       {/* Service Section */}
       <Service />
 

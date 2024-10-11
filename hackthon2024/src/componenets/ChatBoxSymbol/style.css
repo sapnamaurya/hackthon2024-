@@ -1,0 +1,10 @@
+.chaticon {
+  border-radius: 50%;
+  box-shadow: 0px 0px 8px 1px black;
+  z-index: 1;
+  right: 20px;
+  height: 11vh;
+  width: 83px;
+  position: fixed;
+  bottom: 2%;
+}

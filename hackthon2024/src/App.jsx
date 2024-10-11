@@ -10,6 +10,8 @@ import Report from "./pages/Report";
 import MembershipPage from "./pages/MembershipPage";
 import DietPlan from "./pages/DietPlan";
 import Exercises from "./pages/Exercises";
+import ChatBoxPage from "./pages/ChatBoxPage";
+import ChatBoxSymbol from "./componenets/ChatBoxSymbol";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/diet" element={<DietPlan />} />
           <Route path="/exercise" element={<Exercises />} />
+          <Route path="/chat" element={<ChatBoxPage />} />
+          <Route path="/chatbox" element={<ChatBoxSymbol />} />
 
           <Route path="/motivation" element={<Motivational />} />
           <Route path="/report" element={<Report />} />
