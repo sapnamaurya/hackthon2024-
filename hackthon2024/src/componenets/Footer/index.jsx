@@ -30,7 +30,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="icon-wrapper">
-            <Link to="https://www.instagram.com/">
+            <Link to="https://www.instagram.com/gym.home_4/">
               <i className="fa-brands fa-instagram icon"></i>
             </Link>
             <Link>
