@@ -53,7 +53,7 @@ const Service = () => {
           >
             <div className="page-number page-number-left">02</div>
             <div className="page-content page-content-left">
-              <h2 className="page-heading">Diet Plans</h2>
+              <h2 className="page-heading">Pre/Post Workout Diet</h2>
               <p className="page-sub-heading">It is diet plan page.</p>
               <div className="btn-group">
                 <button className="btn-pink btn-project" onClick={handleDiet}>

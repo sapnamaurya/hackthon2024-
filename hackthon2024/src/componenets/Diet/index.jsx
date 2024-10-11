@@ -35,7 +35,7 @@ const Diet = () => {
 
   return (
     <div>
-      <h1 className="plans">DIET PLANS</h1>
+      <h1 className="plans">PRE/POST WORKOUT DIET</h1>
       <div className="flashcard-containers">
         {plans.map((plan, index) => (
           <div key={index} className="flashcard">

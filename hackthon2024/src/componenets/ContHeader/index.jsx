@@ -38,7 +38,7 @@ const ContHeader = () => {
               <a onClick={handleReport}>Report Analysis</a>
             </li>
             <li>
-              <a onClick={handleDiet}>Diet Plan</a>
+              <a onClick={handleDiet}>Pre/Post Workout Diet</a>
             </li>
             <li>
               <a onClick={handleExercise}>Exercise</a>

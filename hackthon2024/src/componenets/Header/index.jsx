@@ -27,7 +27,7 @@ const Header = () => {
               <a href="#report">Report Analysis</a>
             </li>
             <li>
-              <a href="#diet">Diet Plan</a>
+              <a href="#diet">Pre/Post Workout Diet</a>
             </li>
             <li>
               <a href="#exercise">Exercise</a>
